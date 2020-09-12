@@ -2,7 +2,7 @@ from scipy.spatial.transform import Rotation as R
 import numpy as np
 from skeleton_parts import *
 
-# Function scale_axes takes as inputs a np.array xyz_vec of shape [NUM_JOINTS, 3] (equivalent to one frame)
+# Function rotate_axes takes as inputs a np.array xyz_vec of shape [NUM_JOINTS, 3] (equivalent to one frame)
 # and returns the rotated coordinates in a np.array of the same shape
 
 def rotate_skeleton(vec_xyz):
