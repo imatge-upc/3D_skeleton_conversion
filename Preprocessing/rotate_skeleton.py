@@ -10,7 +10,7 @@ def rotate_skeleton(vec_xyz):
     vec_MidHip = np.asanyarray([vec_xyz[bodypart_to_keypoint['MidHip']] for i in range(0, 26)])
     vec_xyz_translated = vec_xyz - vec_MidHip
 
-    # Rotation so the column is the z-axis
+    # Rotation so the column is the y-axis
     column_vec = vec_xyz[bodypart_to_keypoint['Neck']] - vec_xyz[bodypart_to_keypoint['MidHip']]
     column_vec = column_vec / np.linalg.norm(column_vec)
     y_vec = np.asanyarray([0, 1, 0])
